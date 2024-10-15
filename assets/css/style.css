@@ -94,3 +94,78 @@ a {
 .header__action--login {
   margin-right: 7px;
 }
+
+/* ========================================Hero============================================ */
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 76px;
+}
+.hero__content {
+  width: 44%;
+}
+.hero__media {
+  flex: 1;
+}
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 600;
+  /* 80px - 114% */
+  line-height: 1.14;
+  /* Được sử dụng để điều chỉnh khoảng cách giữa các ký tự trong văn bản, 
+  các ký tự sẽ được đặt gần nhau hơn 1.4 pixel so với khoảng cách mặc định.  */
+  letter-spacing: -1.4px;
+}
+
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  /* được sử dụng để thiết lập khoảng cách giữa các cột trong bố cục nhiều cột */
+  column-gap: 38px;
+}
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  /* 30px - 167% */
+  line-height: 1.67;
+}
+.hero__images {
+  display: flex;
+  align-items: center;
+  /* được sử dụng với bố cục Flexbox để căn chỉnh các mục con bên trong một phần tử theo chiều ngang, 
+  đẩy chúng về phía cuối của khung chứa (bên phải đối với ngôn ngữ từ trái sang phải) */
+  justify-content: flex-end;
+}
+.hero__img {
+  border-radius: 6px;
+  /* được sử dụng để xác định cách một phần tử, chẳng hạn như hình ảnh hoặc video, 
+  hiển thị trong một khung chứa với kích thước cố định. Khi sử dụng giá trị cover, 
+  hình ảnh sẽ được cắt và phóng to để lấp đầy hoàn toàn khung chứa, 
+  trong khi vẫn duy trì tỷ lệ gốc của hình ảnh */
+  object-fit: cover;
+}
+.hero_img-large {
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  margin-right: -6px;
+  /* được sử dụng để xác định thứ tự chồng của các phần tử trên trục z (chiều sâu), 
+  tức là độ ưu tiên hiển thị của các phần tử khi chúng xếp chồng lên nhau. */
+  z-index: 1;
+}
+.hero_img-small {
+  width: 210px;
+  height: 410px;
+}
