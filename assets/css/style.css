@@ -197,8 +197,8 @@ a {
 
 .service__desc {
   width: 468px;
-  /* Cắn gữa khối p khi có giá trị width */
-  margin: 0 auto;
+  /* Cắn gữa khối p khi có giá trị width trên 18px trái phải căn giữa dưới 0px*/
+  margin: 18px auto 0;
 }
 
 .service__row {
@@ -270,4 +270,59 @@ a {
 
 .service__btn {
   margin-top: 55px;
+}
+/* ========================================work============================================ */
+.work {
+  background: #f6fbff;
+  padding: 100px 0;
+}
+.work__desc {
+  width: 468px;
+}
+.work__list {
+  margin-top: 86px;
+  display: grid;
+  /* bố cục sẽ lặp lại 3 cột, mỗi cột chiếm một phần bằng nhau trong chiều rộng của grid container. */
+  grid-template-columns: repeat(3, 1fr);
+  /* dùng để thiết lập khoảng cách giữa các cột trong bố cục Grid Layout hoặc Multi-column Layout
+  mỗi cột sẽ có khoảng cách 30 pixel với cột bên cạnh */
+  column-gap: 30px;
+}
+.work-item {
+  padding: 43px;
+  border-radius: 4px;
+  background: #fff;
+  /* viền 16, nét liền, màu  */
+  border: 16px solid #eaf6ff;
+  transition: 0.25s;
+}
+.work-item:hover {
+  border-color: #2e80ce;
+  /*translateY(-16px): phần tử sẽ di chuyển lên trên 16 pixel từ vị trí ban đầu của nó. */
+  transform: translateY(-16px);
+}
+.work-item__heading {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  /* 36px - 138% */
+  line-height: 1.38;
+}
+.work-item__desc {
+  margin-top: 28px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  /* 28px - 175% */
+  line-height: 1.75;
+}
+.work-item__more {
+  margin-top: 18px;
+  display: inline-block;
+  color: #2e80ce;
+  font-size: 1.6rem;
+  font-weight: 400;
+  /* 28px - 175% */
+  line-height: 1.75;
 }
