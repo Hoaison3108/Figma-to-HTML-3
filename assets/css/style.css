@@ -598,7 +598,7 @@ a {
 }
 /* ========================================appointment============================================ */
 .appointment {
-  margin: 85px 0;
+  margin-top: 85px 0;
 }
 .appointment__inner {
   padding: 100px 178px;
@@ -622,4 +622,64 @@ a {
 }
 .appointment__btn {
   margin-top: 38px;
+} /* ========================================appointment============================================ */
+.footer {
+  margin-top: 170px;
+  padding-top: 100px;
+  background: #10375c;
+  font-family: "Open Sans", sans-serif;
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.footer__list {
+  margin: 20px 0 28px;
+}
+.footer__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  /* ngăn không cho xuống hàng */
+  white-space: nowrap;
+}
+.footer__link:hover {
+  /* thêm gạch chân khi hover */
+  text-decoration: underline;
+}
+.footer__item {
+  margin-bottom: 10px;
+}
+.footer__social {
+  margin: 20px 0 28px;
+  display: flex;
+  column-gap: 10px;
+}
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+.footer__social-btn:hover {
+  background: #2e80ce;
+  color: #fff;
 }
