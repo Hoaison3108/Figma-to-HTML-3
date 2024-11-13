@@ -91,6 +91,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Shine Smile</title>
   </head>
   <body>
@@ -179,6 +181,7 @@
                 src="./assets/img/hero-1.jpg"
                 alt="Our services"
                 class="service__img"
+                data-aos="zoom-in-down"
               />
             </figure>
             <!-- service right -->
@@ -747,5 +750,10 @@
         </div>
       </div>
     </section>
+    <!-- js animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
